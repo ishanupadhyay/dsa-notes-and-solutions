@@ -9,9 +9,6 @@ class LongestSubarray:
             self.number.append(int(input()))
     
     def longestsubarray(self, k):
-
-        maximum = float('-inf')
-
         left = 0
         curr_sum = 0
         right = 0
@@ -26,4 +23,3 @@ class LongestSubarray:
             
             length = max(length, right - left + 1)
         return length
-
