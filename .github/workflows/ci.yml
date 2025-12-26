@@ -6,7 +6,7 @@ on:
     paths:
       - 'Arrays/productofarrayexceptself.py'
       - 'Arrays/**'
-      - 'Arrays/productofarrayexceptself_test.py'
+      - 'Tests/productofarrayexceptself_test.py'
       - 'Arrays/**'
       - '.github/workflows/**'
   pull_request:
@@ -14,7 +14,7 @@ on:
     paths:
       - 'Arrays/productofarrayexceptself.py'
       - 'Arrays/**'
-      - 'Arrays/productofarrayexceptself_test.py'
+      - 'Tests/productofarrayexceptself_test.py'
       - 'Arrays/**'
       - '.github/workflows/**'
 
@@ -37,4 +37,4 @@ jobs:
     
     - name: Run tests for productofarrayexceptself
       run: |
-        python Arrays/productofarrayexceptself_test.py
+        python Tests/productofarrayexceptself_test.py
