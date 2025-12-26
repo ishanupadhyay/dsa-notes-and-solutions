@@ -26,8 +26,8 @@ class ProductArray:
 
         return product_array
 
-n = int(input())
-
-productarray = ProductArray()
-productarray.read_array(n)
-print(productarray.product_of_array())
+if __name__ == "__main__":
+    n = int(input())
+    productarray = ProductArray()
+    productarray.read_array(n)
+    print(productarray.product_of_array())
