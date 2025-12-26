@@ -8,6 +8,7 @@ on:
       - 'Arrays/**'
       - 'Arrays/productofarrayexceptself_test.py'
       - 'Arrays/**'
+      - '.github/workflows/**'
   pull_request:
     branches: [ main ]
     paths:
@@ -15,6 +16,7 @@ on:
       - 'Arrays/**'
       - 'Arrays/productofarrayexceptself_test.py'
       - 'Arrays/**'
+      - '.github/workflows/**'
 
 jobs:
   test:
