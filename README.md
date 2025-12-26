@@ -306,6 +306,10 @@ If you encounter any issues or have questions:
 2. Review the algorithm comments in each file
 3. Create an issue for bugs or feature requests
 
+## 📄 License
+
+This project is open source and available under the MIT License.
+
 ---
 
 **Happy Coding! 🎉**
