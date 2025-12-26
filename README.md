@@ -46,7 +46,8 @@ dsa-notes-and-solutions/
 │   ├── TraverseLinkedList.py # Linked list traversal
 │   └── __init__.py
 ├── Tests/                     # Test files
-│   └── productofarrayexceptself_test.py
+│   ├── productofarrayexceptself_test.py
+│   └── traverselinkedlist_test.py
 ├── .github/workflows/         # CI/CD configuration
 ├── requirements.txt           # Dependencies (none required)
 └── README.md                 # This file
@@ -152,6 +153,16 @@ dsa-notes-and-solutions/
 - **Space Complexity**: O(1)
 - **Key Concept**: Node-by-node iteration
 
+**Test Coverage**: Comprehensive test suite (`traverselinkedlist_test.py`) with 8 test cases covering:
+- Basic traversal with multiple nodes
+- Single node edge case
+- Empty list (None) handling
+- Duplicate values in list
+- Negative values
+- Mixed positive/negative/zero values
+- Large list performance (10+ nodes)
+- Node class string representation
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -206,11 +217,26 @@ Output: [3, 4]  # Indices of numbers that sum to 8
 ```bash
 # Run all tests
 cd Tests
+
+# Test Array problems
 python productofarrayexceptself_test.py
+
+# Test LinkedList problems
+python traverselinkedlist_test.py
 ```
 
 ### Test Coverage
-- **Current**: Test for `productofarrayexceptself.py`
+- **Current**: Tests for `productofarrayexceptself.py` and `TraverseLinkedList.py`
+- **Array Problems**: Product Except Self with comprehensive test cases
+- **LinkedList Problems**: LinkedList traversal with 8 different test scenarios including:
+  - Basic linked list traversal
+  - Single node edge case
+  - Empty list handling
+  - Duplicate values
+  - Negative values
+  - Mixed positive/negative/zero values
+  - Large list performance
+  - Node string representation
 - **Future**: Expanding test coverage for all problems
 
 ### Test Features
@@ -248,7 +274,10 @@ We welcome contributions! Here's how you can help:
 ### Planned Features
 - [ ] **More Data Structures**: Trees, Graphs, Hash Tables
 - [ ] **Advanced Algorithms**: Dynamic Programming, Greedy Algorithms
-- [ ] **Comprehensive Test Suite**: Unit tests for all problems
+- [x] **Comprehensive Test Suite**: Unit tests for all problems ✅ *In Progress*
+  - ✅ Product Except Self test implemented
+  - ✅ LinkedList Traversal test with 8 comprehensive test cases
+  - [ ] Expand test coverage to remaining Array problems
 - [ ] **Performance Benchmarks**: Timing and memory usage analysis
 - [ ] **Visualizations**: Algorithm animations and diagrams
 - [ ] **Interview Question Categories**: Problems grouped by company
