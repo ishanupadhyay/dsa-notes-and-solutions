@@ -7,8 +7,10 @@ Tests the ProductArray class with various test cases
 import sys
 import os
 
-# Add the current directory to Python path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Add the parent directory to Python path to import Arrays package
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir)
 
 from Arrays.productofarrayexceptself import ProductArray
 
