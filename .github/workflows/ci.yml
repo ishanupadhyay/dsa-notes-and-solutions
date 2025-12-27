@@ -55,6 +55,7 @@ jobs:
         python Tests/insertnodeatbeginning_test.py
         python Tests/detectcycle_test.py
         python Tests/findmiddleoflinkedlist_test.py
+        python Tests/linkedlistpalindrome_test.py
       continue-on-error: false
     
     - name: Run basic syntax validation for all Python files
