@@ -159,7 +159,7 @@ jobs:
     - name: Run tests and generate coverage for SonarCloud
       run: |
         echo "Running tests for SonarCloud analysis..."
-        python -m pytest Tests/ --cov=Arrays,LinkedList --cov-report=xml --cov-report=term-missing
+        python -m pytest Tests/ --cov=LinkedList --cov-report=xml --cov-report=term-missing
       continue-on-error: true
     
     - name: Check SONAR_TOKEN availability
