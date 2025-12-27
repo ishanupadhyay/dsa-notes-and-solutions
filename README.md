@@ -2,7 +2,7 @@
 
 [![CI Pipeline](https://github.com/ishanupadhyay/dsa-notes-and-solutions/workflows/CI%20Pipeline/badge.svg)](https://github.com/ishanupadhyay/dsa-notes-and-solutions/actions)
 [![codecov](https://codecov.io/gh/ishanupadhyay/dsa-notes-and-solutions/graph/badge.svg?token=UKAMPEGK1L)](https://codecov.io/gh/ishanupadhyay/dsa-notes-and-solutions)
-[![SonarCloud](https://sonarcloud.io/api/project_badges?project=ishanupadhyay_dsa-notes-and-solutions&metric=alert_status)](https://sonarcloud.io/dashboard?id=ishanupadhyay_dsa-notes-and-solutions)
+[![SonarCloud](https://sonarcloud.io/project/overview?id=ishanupadhyay_dsa-notes-and-solutions)](https://sonarcloud.io/project/overview?id=ishanupadhyay_dsa-notes-and-solutions)
 
 A comprehensive collection of Data Structures and Algorithms (DSA) problems with detailed solutions and explanations, designed to help with coding interview preparation.
 
