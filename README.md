@@ -1,5 +1,9 @@
 # DSA Notes and Solutions
 
+[![CI Pipeline](https://github.com/your-username/dsa-notes-and-solutions/workflows/CI%20Pipeline/badge.svg)](https://github.com/your-username/dsa-notes-and-solutions/actions)
+[![codecov](https://codecov.io/gh/your-username/dsa-notes-and-solutions/branch/main/graph/badge.svg)](https://codecov.io/gh/your-username/dsa-notes-and-solutions)
+[![SonarCloud](https://sonarcloud.io/api/project_badges?project=your-username_dsa-notes-and-solutions&metric=alert_status)](https://sonarcloud.io/dashboard?id=your-username_dsa-notes-and-solutions)
+
 A comprehensive collection of Data Structures and Algorithms (DSA) problems with detailed solutions and explanations, designed to help with coding interview preparation.
 
 ## 📋 Table of Contents
@@ -11,6 +15,7 @@ A comprehensive collection of Data Structures and Algorithms (DSA) problems with
 - [Getting Started](#getting-started)
 - [Running Solutions](#running-solutions)
 - [Testing](#testing)
+- [Code Quality](#code-quality)
 - [Contributing](#contributing)
 - [Future Enhancements](#future-enhancements)
 
@@ -243,6 +248,60 @@ python traverselinkedlist_test.py
 - Automated test cases with expected outputs
 - Manual input testing capability
 - Comprehensive test reporting
+
+## 🔍 Code Quality
+
+This repository integrates automated code quality analysis through **SonarCloud** to ensure high standards of code quality, security, and maintainability.
+
+### 🔐 SonarCloud Integration
+
+- **Quality Gates**: Automated checks for code quality standards
+- **Security Analysis**: Detection of potential security vulnerabilities  
+- **Technical Debt**: Identification and tracking of code improvements
+- **Coverage Integration**: Combined analysis with test coverage metrics
+- **Pull Request Analysis**: Automated quality checks on every PR
+
+### 📊 Quality Metrics Monitored
+
+- **Code Coverage**: Test coverage percentage tracking
+- **Maintainability**: Code complexity and readability analysis
+- **Reliability**: Bug detection and code quality scoring
+- **Security**: Vulnerability scanning and security hotspot detection
+- **Duplicated Code**: Detection of code duplication patterns
+
+### 🚀 CI/CD Integration
+
+The SonarCloud analysis runs automatically as part of our GitHub Actions CI pipeline:
+- **On Pull Requests**: Quality checks before merging
+- **On Main Branch**: Comprehensive analysis on successful merges
+- **Quality Gates**: Ensures code meets defined quality standards before deployment
+
+### 📈 Quality Standards
+
+- **Maintainability Rating**: A or higher
+- **Reliability Rating**: A or higher  
+- **Security Rating**: A or higher
+- **Test Coverage**: >80% coverage target
+- **Technical Debt**: <5% of development time
+
+### 🔧 Setup Instructions
+
+To set up SonarCloud for your own fork:
+
+1. **Create SonarCloud Account**: Sign up at [sonarcloud.io](https://sonarcloud.io)
+2. **Import GitHub Repository**: Connect your GitHub account and import this repository
+3. **Generate Token**: Create a new project and generate a SonarCloud token
+4. **Configure GitHub Secrets**: Add `SONAR_TOKEN` to your repository secrets
+5. **Update Configuration**: Replace `your-github-username` in `sonar-project.properties` with your actual username
+
+### 📋 Quality Reports
+
+Quality reports are automatically generated and available in:
+- **SonarCloud Dashboard**: Comprehensive project analysis
+- **Pull Request Comments**: Inline quality feedback
+- **GitHub Checks**: Integration with GitHub's native checks system
+
+*This ensures that all code contributions maintain the highest standards of quality and security.*
 
 ## 🤝 Contributing
 

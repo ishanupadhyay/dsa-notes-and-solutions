@@ -1,2 +1,12 @@
 # Data Structures and Algorithms Practice Repository
-# No external dependencies required - pure Python implementations
+# Dependencies for testing and code analysis
+
+# Testing and coverage
+pytest>=7.0.0
+pytest-cov>=4.0.0
+coverage>=7.0.0
+
+# Code quality (for SonarCloud integration)
+flake8>=6.0.0
+black>=23.0.0
+isort>=5.0.0
