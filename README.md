@@ -49,10 +49,21 @@ dsa-notes-and-solutions/
 ├── LinkedList/                # Linked List problems
 │   ├── node.py               # Node class implementation
 │   ├── TraverseLinkedList.py # Linked list traversal
+│   ├── LinkedListPalindrome.py # Check if linked list is palindrome
+│   ├── ReverseLinkedList.py # Reverse linked list
+│   ├── DetectCycle.py       # Detect cycle in linked list
+│   ├── InsertNodeAtBeginning.py # Insert node at beginning
+│   ├── InsertNodeAtEnd.py   # Insert node at end
+│   ├── findmiddleoflinkedlist.py # Find middle of linked list
 │   └── __init__.py
 ├── Tests/                     # Test files
 │   ├── productofarrayexceptself_test.py
-│   └── traverselinkedlist_test.py
+│   ├── traverselinkedlist_test.py
+│   ├── linkedlistpalindrome_test.py
+│   ├── detectcycle_test.py
+│   ├── insertnodeatbeginning_test.py
+│   ├── insertnodeatend_test.py
+│   └── findmiddleoflinkedlist_test.py
 ├── .github/workflows/         # CI/CD configuration
 ├── requirements.txt           # Dependencies (none required)
 └── README.md                 # This file
@@ -168,6 +179,99 @@ dsa-notes-and-solutions/
 - Large list performance (10+ nodes)
 - Node class string representation
 
+### 3. LinkedList Palindrome (`LinkedListPalindrome.py`)
+**Problem**: Check if a linked list is a palindrome.
+
+**Algorithm**: Find middle + reverse second half + compare
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Key Concept**: Slow and fast pointers, in-place reversal
+
+**Test Coverage**: Comprehensive test suite (`linkedlistpalindrome_test.py`) with 30+ test cases including:
+- Odd and even length palindromes
+- Single node and two node edge cases
+- Empty list handling
+- Negative values and zero values
+- Character values
+- Large palindromes (9+ nodes)
+- Non-palindromes with various mismatch patterns
+- Helper function testing (find_middle, reverse_ll)
+
+### 4. Reverse LinkedList (`ReverseLinkedList.py`)
+**Problem**: Reverse a linked list in-place.
+
+**Algorithm**: Iterative reversal with three pointers
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Key Concept**: In-place pointer manipulation
+
+### 5. Detect Cycle (`DetectCycle.py`)
+**Problem**: Detect if a linked list contains a cycle.
+
+**Algorithm**: Floyd's Cycle Detection Algorithm (slow and fast pointers)
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Key Concept**: Two-pointer technique
+
+**Test Coverage**: Comprehensive test suite (`detectcycle_test.py`) with 35+ test cases covering:
+- Empty and single node lists
+- Two-node and multi-node lists
+- Various cycle positions (head, middle, end)
+- Self-loops and complex cycle structures
+- Large lists (100+ nodes)
+- Boundary conditions and edge cases
+- Mixed values (positive, negative, zero)
+
+### 6. Insert Node at Beginning (`InsertNodeAtBeginning.py`)
+**Problem**: Insert a new node at the beginning of a linked list.
+
+**Algorithm**: Simple pointer adjustment
+- **Time Complexity**: O(1)
+- **Space Complexity**: O(1)
+- **Key Concept**: Head pointer update
+
+**Test Coverage**: Comprehensive test suite (`insertnodeatbeginning_test.py`) with 10 test cases covering:
+- Empty list insertion
+- Single and multi-node list insertion
+- Node connections integrity
+- Multiple consecutive insertions
+- Various data types (negative, zero, duplicates)
+- Large list insertion performance
+
+### 7. Insert Node at End (`InsertNodeAtEnd.py`)
+**Problem**: Insert a new node at the end of a linked list.
+
+**Algorithm**: Traverse to end and append
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Key Concept**: End traversal and pointer adjustment
+
+**Test Coverage**: Comprehensive test suite (`insertnodeatend_test.py`) with 13 test cases covering:
+- Empty list insertion
+- Single, two, and multi-node list insertion
+- Return value correctness
+- Node connections integrity
+- Multiple consecutive insertions
+- Various data types and edge cases
+- Large list insertion performance
+- While loop condition coverage
+
+### 8. Find Middle of LinkedList (`findmiddleoflinkedlist.py`)
+**Problem**: Find the middle node of a linked list.
+
+**Algorithm**: Slow and fast pointer technique
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+- **Key Concept**: Two-pointer traversal
+
+**Test Coverage**: Comprehensive test suite (`findmiddleoflinkedlist_test.py`) with 17 test cases covering:
+- Empty and very small lists (1-2 nodes)
+- Odd and even length lists
+- Large lists (50+ nodes)
+- While loop condition variations (fast=None, fast.next=None)
+- Various data types (negative, zero, duplicates, mixed)
+- Node integrity and list preservation
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -228,21 +332,33 @@ python productofarrayexceptself_test.py
 
 # Test LinkedList problems
 python traverselinkedlist_test.py
+python linkedlistpalindrome_test.py
+python detectcycle_test.py
+python insertnodeatbeginning_test.py
+python insertnodeatend_test.py
+python findmiddleoflinkedlist_test.py
 ```
 
 ### Test Coverage
-- **Current**: Tests for `productofarrayexceptself.py` and `TraverseLinkedList.py`
-- **Array Problems**: Product Except Self with comprehensive test cases
-- **LinkedList Problems**: LinkedList traversal with 8 different test scenarios including:
-  - Basic linked list traversal
-  - Single node edge case
-  - Empty list handling
-  - Duplicate values
-  - Negative values
-  - Mixed positive/negative/zero values
-  - Large list performance
-  - Node string representation
-- **Future**: Expanding test coverage for all problems
+- **Current**: Comprehensive test suites for multiple problems with 100+ test cases total
+- **Array Problems**: 
+  - Product Except Self with comprehensive test cases
+- **LinkedList Problems**: Extensive test coverage across all major problems:
+  - **LinkedList Traversal**: 8 different test scenarios
+  - **Palindrome Detection**: 30+ test cases covering all edge cases
+  - **Cycle Detection**: 35+ test cases with comprehensive boundary coverage
+  - **Insert at Beginning**: 10 test cases covering insertion scenarios
+  - **Insert at End**: 13 test cases with comprehensive coverage
+  - **Find Middle**: 17 test cases covering all length variations
+- **Test Categories**:
+  - Basic functionality and edge cases
+  - Empty and single node lists
+  - Large list performance (100+ nodes)
+  - Negative values, zero values, and duplicates
+  - Mixed data types and character values
+  - Node integrity and list preservation
+  - Algorithm-specific boundary conditions
+- **Future**: Expanding test coverage for remaining Array problems
 
 ### Test Features
 - Automated test cases with expected outputs
