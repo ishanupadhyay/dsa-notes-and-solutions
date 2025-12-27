@@ -49,6 +49,7 @@ jobs:
       run: |
         echo "Running LinkedList tests..."
         python Tests/traverselinkedlist_test.py
+        python Tests/reverselinkedlist_test.py
       continue-on-error: false
     
     - name: Run basic syntax validation for all Python files
