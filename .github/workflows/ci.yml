@@ -52,6 +52,9 @@ jobs:
         echo "Running LinkedList tests..."
         python Tests/traverselinkedlist_test.py
         python Tests/reverselinkedlist_test.py
+        python Tests/insertnodeatbeginning_test.py
+        python Tests/detectcycle_test.py
+        python Tests/findmiddleoflinkedlist_test.py
       continue-on-error: false
     
     - name: Run basic syntax validation for all Python files
