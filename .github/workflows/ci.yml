@@ -62,6 +62,8 @@ jobs:
       run: |
         echo "Running Tree tests"
         python Tests/invertbinarytree_test.py
+        python Tests/maximumvalueinbinarytree_test.py
+      continue-on-error: false
     
     - name: Run basic syntax validation for all Python files
       run: |
