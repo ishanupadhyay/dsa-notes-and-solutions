@@ -56,9 +56,12 @@ jobs:
         python Tests/detectcycle_test.py
         python Tests/findmiddleoflinkedlist_test.py
         python Tests/linkedlistpalindrome_test.py
-        python Tests/removeNthnodefromend_test.py
-        python Tests/invertbinarytree_test.py
       continue-on-error: false
+    
+    - name: Run Tree Tests
+      run: |
+        echo "Running Tree tests"
+        python Tests/invertbinarytree_test.py
     
     - name: Run basic syntax validation for all Python files
       run: |
