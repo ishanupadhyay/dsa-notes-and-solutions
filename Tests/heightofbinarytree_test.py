@@ -369,7 +369,7 @@ class TestHeightOfBinaryTree(unittest.TestCase):
         result = height_of_binary_tree(root)
         self.assertEqual(result, 50, "Right skewed tree with 50 nodes should return height 50")
     
-    def test_34_perfect_tree_height_5_63_nodes(self):
+    def test_34_perfect_tree_height_6_63_nodes(self):
         """Test 34: Perfect binary tree with height 6 (63 nodes)"""
         root = Node(1)
         nodes = [Node(i) for i in range(1, 64)]
@@ -462,10 +462,8 @@ class TestHeightOfBinaryTree(unittest.TestCase):
         result = height_of_binary_tree(root)
         self.assertEqual(result, 100, "Right skewed tree with 100 nodes should return height 100")
     
-    def test_41_perfect_tree_height_6_127_nodes(self):
-        """Test 41: Perfect binary tree with height 5 (31 nodes built)"""
-        # Note: Only 31 nodes are built (5 levels), not 127 or 63
-        # 31 nodes = 2^5 - 1 = 31, so height is 5, not 6
+    def test_41_perfect_tree_height_5_31_nodes(self):
+        """Test 41: Perfect binary tree with height 5 (31 nodes)"""
         root = Node(1)
         # Build level by level
         root.left = Node(2)
@@ -501,6 +499,8 @@ class TestHeightOfBinaryTree(unittest.TestCase):
         root.right.right.right.right = Node(31)
         result = height_of_binary_tree(root)
         self.assertEqual(result, 5, "Perfect tree with 31 nodes (5 levels) should return 5")
+    
+    # ==================== VALIDATION TESTS ====================
     
     def test_42_height_1_validation(self):
         """Test 42: Verify all height 1 scenarios"""
